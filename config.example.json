@@ -1,0 +1,39 @@
+{
+  "_comment": "Copy this file to config.json and edit. Keys starting with _ are ignored. See README.md for every option.",
+
+  "defaultStation": "hitfm",
+  "stations": {
+    "hitfm":        { "name": "Hit FM",                  "url": "https://online.hitfm.ua/HitFM",        "description": "Main live broadcast (128 kbps)", "website": "https://www.hitfm.ua" },
+    "hitfm-hd":     { "name": "Hit FM HD",               "url": "https://online.hitfm.ua/HitFM_HD",     "description": "Main live broadcast (320 kbps)", "website": "https://www.hitfm.ua" },
+    "hitfm-ukr":    { "name": "Hit FM Ukrainian",        "url": "https://online.hitfm.ua/HitFM_Ukr",    "description": "Ukrainian hits only",           "website": "https://www.hitfm.ua" },
+    "hitfm-ukr-hd": { "name": "Hit FM Ukrainian HD",     "url": "https://online.hitfm.ua/HitFM_Ukr_HD", "description": "Ukrainian hits only (320 kbps)", "website": "https://www.hitfm.ua" },
+    "hitfm-top":    { "name": "Hit FM Top",              "url": "https://online.hitfm.ua/HitFM_Top",    "description": "Top chart non-stop",            "website": "https://www.hitfm.ua" },
+    "hitfm-best":   { "name": "Hit FM Best",             "url": "https://online.hitfm.ua/HitFM_Best",   "description": "Best hits of all time",         "website": "https://www.hitfm.ua" }
+  },
+  "allowCustomUrls": false,
+
+  "defaultVolume": 80,
+  "maxVolume": 150,
+
+  "stayInChannelByDefault": false,
+  "leaveWhenAloneAfterSeconds": 120,
+
+  "announceTrackChanges": true,
+  "presence": "track",
+  "embedColor": "#E30613",
+
+  "commandGuildId": "",
+  "dataFile": "data/guilds.json",
+
+  "autoJoin": [
+    { "_comment": "Example - fill in IDs to have the bot join automatically on startup", "guildId": "", "channelId": "", "station": "hitfm" }
+  ],
+
+  "stream": {
+    "ffmpegPath": "",
+    "userAgent": "HitFM-Discord-Bot/1.0",
+    "timeoutSeconds": 15,
+    "reconnectDelaysSeconds": [1, 2, 5, 10, 30],
+    "metadataEncoding": "auto"
+  }
+}
